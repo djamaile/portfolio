@@ -1,23 +1,7 @@
 import React, { ReactElement } from "react";
-import Chip from "@material-ui/core/Chip";
 import { projectStyles } from "../../assets/css/detail/project";
 import { projects } from "../../utils/data";
-
-interface Props {
-  stack: Array<string>;
-}
-
-const TechStacks: React.FC<Props> = ({ stack }): ReactElement => {
-  return (
-    <>
-      {stack.map((tech) => {
-        return (
-          <Chip label={tech} color="secondary" style={{ marginRight: 5 }} />
-        );
-      })}
-    </>
-  );
-};
+import TechStacks from "./TechStack";
 
 const Project: React.FC = (): ReactElement => {
   const classes = projectStyles();

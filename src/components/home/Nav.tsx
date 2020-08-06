@@ -6,7 +6,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import { Blog, Project } from "../../components/detail";
+import { Blog, Project, Resume } from "../../components/detail";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -105,7 +105,7 @@ const Navigation: React.FC = (): ReactElement => {
           <Project />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <Resume />
         </TabPanel>
       </SwipeableViews>
     </div>

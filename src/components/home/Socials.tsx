@@ -4,15 +4,29 @@ import Icon from "@material-ui/core/Icon";
 import classNames from "classnames/bind";
 import { socialStyles } from "../../assets/css/home/home";
 
-const classnames = [
-  "fab fa-linkedin fa-fw",
-  "fab fa-github fa-fw",
-  "fab fa-youtube fa-fw",
-  "fab fa-dev fa-fw",
+const socialDetails = [
+  {
+    classname: "fab fa-linkedin fa-fw",
+    link: "https://www.linkedin.com/in/djamaile/",
+  },
+  {
+    classname: "fab fa-github fa-fw",
+    link: "https://github.com/djamaile",
+  },
+  {
+    classname: "fab fa-youtube fa-fw",
+    link: "https://www.linkedin.com/in/djamaile/",
+  },
+  {
+    classname: "fab fa-dev fa-fw",
+    link: "https://dev.to/djamaile",
+  },
 ];
 
 const Socials: React.FC = (): ReactElement => {
   const classes = socialStyles();
+  const preventDefault = (event: React.SyntheticEvent) =>
+    event.preventDefault();
 
   React.useEffect(() => {
     const node = loadCSS(
@@ -29,8 +43,15 @@ const Socials: React.FC = (): ReactElement => {
 
   return (
     <div className={classes.container}>
-      {classnames.map((cn) => {
-        return <Icon key={cn} className={classNames(cn, classes.icon)} />;
+      {socialDetails.map((cn) => {
+        return (
+          <a href={cn.link} target="_blank" rel="noreferrer">
+            <Icon
+              key={cn.classname}
+              className={classNames(cn.classname, classes.icon)}
+            />
+          </a>
+        );
       })}
     </div>
   );

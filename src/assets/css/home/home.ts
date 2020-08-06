@@ -23,6 +23,7 @@ const socialStyles = makeStyles(() =>
       fontSize: 30,
       marginTop: 10,
       marginRight: 10,
+      color: "black",
     },
     container: {
       textAlign: "center",
