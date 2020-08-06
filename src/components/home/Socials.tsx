@@ -25,8 +25,6 @@ const socialDetails = [
 
 const Socials: React.FC = (): ReactElement => {
   const classes = socialStyles();
-  const preventDefault = (event: React.SyntheticEvent) =>
-    event.preventDefault();
 
   React.useEffect(() => {
     const node = loadCSS(
@@ -45,7 +43,7 @@ const Socials: React.FC = (): ReactElement => {
     <div className={classes.container}>
       {socialDetails.map((cn) => {
         return (
-          <a href={cn.link} target="_blank" rel="noreferrer">
+          <a href={cn.link} target="_blank" rel="noopener noreferrer">
             <Icon
               key={cn.classname}
               className={classNames(cn.classname, classes.icon)}
