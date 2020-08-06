@@ -1,23 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f57d836f9547713d3687d8a151540f7",
+    "revision": "26d4d160f8be8fb860cd0c28d5241f28",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "bb52297aacccbf8785ea",
-    "url": "/portfolio/static/css/4.958e3fcb.chunk.css"
-  },
-  {
-    "revision": "a52cb81cb32f56fa2f87",
+    "revision": "de093e74215526cf278b",
     "url": "/portfolio/static/css/main.d9e75851.chunk.css"
   },
   {
-    "revision": "c100e2b8662df43b6fc2",
-    "url": "/portfolio/static/js/2.f84d1454.chunk.js"
+    "revision": "f2f63bfb5f70f4349162",
+    "url": "/portfolio/static/js/2.11c7b7ed.chunk.js"
   },
   {
     "revision": "554d9949e075f5ed61ee4ef6dd8198d2",
-    "url": "/portfolio/static/js/2.f84d1454.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.11c7b7ed.chunk.js.LICENSE.txt"
   },
   {
     "revision": "95c64a343ffd24af1433",
@@ -28,16 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/3.cc6b88c3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bb52297aacccbf8785ea",
-    "url": "/portfolio/static/js/4.e2d75b35.chunk.js"
+    "revision": "08b8f2a663a010f3bec1",
+    "url": "/portfolio/static/js/4.7cbcdbf6.chunk.js"
   },
   {
-    "revision": "a52cb81cb32f56fa2f87",
-    "url": "/portfolio/static/js/main.950aead8.chunk.js"
+    "revision": "de093e74215526cf278b",
+    "url": "/portfolio/static/js/main.fee38c91.chunk.js"
   },
   {
-    "revision": "989061cf7a9f90d54efa",
-    "url": "/portfolio/static/js/runtime-main.d42a68a1.js"
+    "revision": "c086139a42bee8cbc1a9",
+    "url": "/portfolio/static/js/runtime-main.ab8ff9a4.js"
   },
   {
     "revision": "8762bd10d73b6625796af7a6d57fdaca",
@@ -50,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d268263fbdd601cdf59c1bb756d1f426",
     "url": "/portfolio/static/media/kanji.d268263f.png"
-  },
-  {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/portfolio/static/media/logo.5d5d9eef.svg"
   },
   {
     "revision": "03fb83e46a378bd794b6896b49d713f7",
