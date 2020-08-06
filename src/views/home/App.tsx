@@ -1,8 +1,20 @@
 import React, { ReactElement } from "react";
-import App from "../../components/home/App";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Container from "@material-ui/core/Container";
+import { Name, Introduction, Socials, Navigation } from "../../components/home";
 
 const Home: React.FC = (): ReactElement => {
-  return <App />;
+  return (
+    <>
+      <CssBaseline />
+      <Container fixed style={{ margin: "60px auto", maxWidth: 800 }}>
+        <Name />
+        <Introduction />
+        <Socials />
+        <Navigation />
+      </Container>
+    </>
+  );
 };
 
 export default Home;

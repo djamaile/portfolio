@@ -1,15 +1,17 @@
 import axios, { Method, AxiosResponse } from "axios";
+import { ArticleQueryParams } from "../types/blog";
 
-const api = axios.create({
-  baseURL: process.env.REACT_APP_HOST_BACKEND,
+const dev = axios.create({
+  baseURL: "https://dev.to/api",
 });
 
+type Params = ArticleQueryParams;
 const request = <T>(
   method: Method,
   url: string,
-  params: any
+  params: Params
 ): Promise<AxiosResponse<T>> => {
-  return api.request<T>({
+  return dev.request<T>({
     method,
     url,
     params,
