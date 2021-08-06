@@ -41,6 +41,27 @@ const projects: Array<Project> = [
 const experience: Array<Experience> = [
   {
     img: bol,
+    jobTitle: "Software Engineer - Team Insights",
+    company: "Bol.com",
+    date: "Sep 2020 - Aug 2021",
+    workLength: "11 mos",
+    location: "Utrecht Area, Netherlands",
+    tasks: [
+      "Part of team insights which is responsible for the metrics, monitoring and logging platform of Bol.com.",
+      "Developing Elastic Cloud in Kubernetes",
+      "Developing and managing the centralised metrics platform (Prometheus/Thanos)",
+      "Developing and managing internal puppet modules",
+      "Handeling incidents",
+    ],
+    techstack: [
+      "Elasticsearch (ECK)",
+      "Prometheus",
+      "Puppet",
+      "Jsonnet",
+    ],
+  },
+  {
+    img: bol,
     jobTitle: "Software Engineer Graduation Intern",
     company: "Bol.com",
     date: "Feb 2020 - Jun 2020",
