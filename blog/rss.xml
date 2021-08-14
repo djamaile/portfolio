@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Djamaile Rahamat Blog</title>
+        <link>https://djamaile.dev/blog</link>
+        <description>Djamaile Rahamat Blog</description>
+        <lastBuildDate>Fri, 06 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[How I structure my React /TS applications (2021)]]></title>
+            <link>https://djamaile.dev/blog/how-i-structure-my-react-ts-applications-2021</link>
+            <guid>how-i-structure-my-react-ts-applications-2021</guid>
+            <pubDate>Fri, 06 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[(code is hosted at//github.com/djamaile/react-boilerplate-2021)]]></description>
+        </item>
+        <item>
+            <title><![CDATA[How I structure my React/TS applications]]></title>
+            <link>https://djamaile.dev/blog/how-i-structure-my-react-ts-applications</link>
+            <guid>how-i-structure-my-react-ts-applications</guid>
+            <pubDate>Wed, 15 Jul 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[(I have updated my react structure, you can read it here//dev.to/djamaile/how-i-structure-my-react-ts-applications-2021-145j)]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Small React(ion): From Kanji to Hiragana!]]></title>
+            <link>https://djamaile.dev/blog/small-react-ion-from-kanji-to-hiragana</link>
+            <guid>small-react-ion-from-kanji-to-hiragana</guid>
+            <pubDate>Wed, 08 Jul 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[I am starting a series talking about my small React applications. To begin, we start with this small application I wrote about 7 months ago. If you just want to see the code, here you go//github.com/djamaile/kanji-to-hiragana/]]></description>
+        </item>
+    </channel>
+</rss>
