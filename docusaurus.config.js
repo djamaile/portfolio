@@ -4,7 +4,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Djamaile Rahamat',
-  tagline: 'I like full-stack development. Also, I am interested in the cloud, microservices and graphs.',
+  tagline:
+    'I like full-stack development. Also, I am interested in the cloud, coding & e-sports.',
   url: 'https://djamaile.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -82,9 +83,9 @@ module.exports = {
         src: 'img/mob-2.png',
       },
       items: [
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/djamaile',
+          href: 'https://github.com/djamaile/portfolio',
           label: 'GitHub',
           position: 'right',
         },
@@ -94,30 +95,13 @@ module.exports = {
       trackingID: 'G-3X3J5580FL',
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Support me',
           items: [
             {
               html: `<a href="https://www.buymeacoffee.com/djamaile" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>`,
-            },
-          ]
-        },
-        {
-          title: 'Socials',
-          items: [
-            { label: 'LinkedIn', href: "https://www.linkedin.com/in/djamaile/" },
-            { label: 'Github', href: "https://github.com/djamaile" },
-            { label: 'Email', href: "mailto:rdjamaile@gmail.com" },
-          ],
-        },
-        {
-          title: 'Links',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
             },
           ],
         },
@@ -137,8 +121,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/djamaile/portfolio/edit/master/blog/',
+          editUrl: 'https://github.com/djamaile/portfolio/edit/master/',
           feedOptions: {
             type: 'all',
           },
