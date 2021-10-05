@@ -62,6 +62,8 @@ export const Navigation: React.FC = () => {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
+
+  // TODO: is a bug which makes isDarkTheme usless on first render
   const { isDarkTheme } = useThemeContext();
 
   const handleChange = (

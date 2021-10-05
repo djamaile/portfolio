@@ -42,7 +42,7 @@ export const Experience = ({
             </div>
           </div>
           <div className={classes.city}>
-            <span className={classes.information}>
+            <p className={classes.information}>
               {tasks.map(task => {
                 return (
                   <>
@@ -50,7 +50,7 @@ export const Experience = ({
                   </>
                 );
               })}
-            </span>
+            </p>
             <TechStacks stack={techstack} />
           </div>
         </div>

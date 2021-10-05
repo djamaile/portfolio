@@ -40,7 +40,7 @@ const projects: Array<ProjectType> = [
     techstack: ['ReactJS', 'Solidity', 'Ethereum'],
   },
   {
-    img: 'img/portfolio.png',
+    img: 'img/djamaile-light.png',
     title: 'Portfolio',
     description: 'Personal portfolio',
     codeLink: 'https://github.com/djamaile/portfolio',

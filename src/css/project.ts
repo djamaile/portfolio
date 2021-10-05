@@ -6,6 +6,7 @@ export const projectStyles = makeStyles(() =>
     container: {
       flexDirection: 'row',
       margin: 20,
+      marginLeft: 0,
       display: 'flex',
     },
     imgContainer: {
