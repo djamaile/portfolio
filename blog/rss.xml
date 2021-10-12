@@ -4,9 +4,16 @@
         <title>Djamaile Rahamat Blog</title>
         <link>https://djamaile.dev/blog</link>
         <description>Djamaile Rahamat Blog</description>
-        <lastBuildDate>Fri, 06 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Dec 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[How to setup husky, eslint and prettier within minutes]]></title>
+            <link>https://djamaile.dev/blog/how-to-setup-husky-eslint-prettier</link>
+            <guid>how-to-setup-husky-eslint-prettier</guid>
+            <pubDate>Fri, 10 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Every project these days needs a linter of some sorts. So, let’s set one up for our React/Typescript project!]]></description>
+        </item>
         <item>
             <title><![CDATA[How I structure my React /TS applications (2021)]]></title>
             <link>https://djamaile.dev/blog/how-i-structure-my-react-ts-applications-2021</link>
