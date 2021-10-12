@@ -1,6 +1,5 @@
 import React from 'react';
 import { projectStyles } from '../css';
-import useThemeContext from '@theme/hooks/useThemeContext';
 import { TechStacks } from '.';
 
 export const Project = ({
@@ -12,8 +11,6 @@ export const Project = ({
   techstack,
 }) => {
   const classes = projectStyles();
-  const { isDarkTheme } = useThemeContext();
-  const linkColor = isDarkTheme ? 'white' : '#18191a';
 
   return (
     <section className={classes.container}>
@@ -32,7 +29,6 @@ export const Project = ({
                 marginRight: '.7rem',
                 marginLeft: '-.7rem',
                 padding: '.5rem .7rem',
-                color: linkColor,
               }}
               href={codeLink}
               target="_blank"
@@ -48,7 +44,6 @@ export const Project = ({
                 marginRight: '.7rem',
                 marginLeft: '-.7rem',
                 padding: '.5rem .7rem',
-                color: linkColor,
               }}
               href={liveLink}
               target="_blank"
