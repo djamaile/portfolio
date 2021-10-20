@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export const Navigation: React.FC = () => {
+export const Navigation = () => {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);

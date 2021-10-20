@@ -1,11 +1,8 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import Chip from '@mui/material/Chip';
 
-interface TechStackProps {
-  stack: Array<string>;
-}
-
-export const TechStacks: React.FC<TechStackProps> = ({ stack }) => {
+type TechStackProps = PropsWithChildren<{stack: Array<string>}>
+export const TechStacks: React.FC<TechStackProps> = ({ stack }: TechStackProps) => {
   return (
     <>
       {stack.map(tech => {
