@@ -41,7 +41,7 @@ const getHoverIconColor = (site: string): string => {
   }
 };
 
-export const Socials: React.FC = () => {
+export const Socials = () => {
   const { isDarkTheme } = useThemeContext();
 
   useEffect(() => {
