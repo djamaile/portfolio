@@ -58,7 +58,8 @@ const experience: Array<ExperienceType> = [
     workLength: `${caculateWorkLenght(new Date(2021, 6, 1), new Date())}`,
     location: 'Utrecht Area, Netherlands',
     tasks: [
-      'Implementing https://backstage.io within Bol.com with the goal of improving the developers experience',
+      'Developing a developer experience portal based on https://backstage.io within Bol.com',
+      'Scrum master'
     ],
     techstack: ['ReactJS', 'TypeScript', 'NodeJS'],
   },
