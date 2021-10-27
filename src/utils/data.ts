@@ -4,7 +4,7 @@ import {
   Project as ProjectType,
 } from '../types';
 
-const caculateWorkLenght = (startMonth: Date, endMonth: Date): number => {
+const caculateWorkLength = (startMonth: Date, endMonth: Date): number => {
   let months = (endMonth.getFullYear() - startMonth.getFullYear()) * 12;
   months -= startMonth.getMonth() + 1;
   months += endMonth.getMonth();
@@ -55,7 +55,7 @@ const experience: Array<ExperienceType> = [
     jobTitle: 'Software Engineer - Team Developer Experience',
     company: 'Bol.com',
     date: 'Aug 2020 - Pres',
-    workLength: `${caculateWorkLenght(new Date(2021, 6, 1), new Date())}`,
+    workLength: `${caculateWorkLength(new Date(2021, 6, 1), new Date())}`,
     location: 'Utrecht Area, Netherlands',
     tasks: [
       'Developing a developer experience portal based on https://backstage.io within Bol.com',

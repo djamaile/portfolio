@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './HomepageFeatures.module.css';
-import { Navigation } from '.';
 import { PersonalTabs } from './Tabs';
 
 export default function HomepageFeatures() {
