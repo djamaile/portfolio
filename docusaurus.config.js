@@ -113,6 +113,7 @@ module.exports = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
+    metadatas: [{ name: 'robots', content: 'max-image-preview:large' }],
   },
   presets: [
     [
