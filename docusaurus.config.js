@@ -113,7 +113,10 @@ module.exports = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
-    metadatas: [{ name: 'robots', content: 'max-image-preview:large' }],
+    metadatas: [
+      { name: 'robots', content: 'max-image-preview:large' },
+      { name: 'monetization', content: '$ilp.uphold.com/fYPB8Pjyig3z' }
+    ],
   },
   presets: [
     [
