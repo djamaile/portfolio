@@ -416,7 +416,7 @@ This will provision an HPA in your namespace which you can check with:
 $ kubectl get hpa
 ```
 
-but because this is a custom CRD you can also query the custom CRD wuth kubectl:
+but because this is a custom CRD you can also query the custom CRD with kubectl:
 
 ```sh
 $ kubectl get scaledobject.keda.sh/prometheus-scaledobject
