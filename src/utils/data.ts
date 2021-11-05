@@ -17,7 +17,7 @@ const projects: Array<ProjectType> = [
     title: 'Our Manga Community',
     description:
       'Users can see the latest manga releases from different publishers',
-    codeLink: '',
+    codeLink: 'https://github.com/djamaile/ourmanga.community',
     liveLink: 'https://ourmanga.community',
     techstack: ['ReactJS', 'TypeScript', 'Golang'],
   },
