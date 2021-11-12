@@ -150,7 +150,7 @@ const education: Array<EducationType> = [
   },
   {
     img: 'img/glr.png',
-    school: 'Grafisch Lyceum Rotterda',
+    school: 'Grafisch Lyceum Rotterdam',
     study: 'MBO, Application and media development',
     date: '2013 - 2016',
   },
