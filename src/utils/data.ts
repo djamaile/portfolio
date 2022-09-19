@@ -51,11 +51,21 @@ const projects: Array<ProjectType> = [
 
 const experience: Array<ExperienceType> = [
   {
+    img: 'img/spotify.svg',
+    jobTitle: 'Software Engineer',
+    company: 'Spotify',
+    date: 'Sep 2022 - pres',
+    workLength: `${caculateWorkLength(new Date(2022, 9, 1), new Date())} mos`,
+    location: 'Amsterdam, Noord-Holland, Nederland',
+    tasks: ['Working on Backstage'],
+    techstack: ['ReactJS', 'TypeScript'],
+  },
+  {
     img: 'img/bol.png',
     jobTitle: 'Software Engineer - Team Developer Experience',
     company: 'Bol.com',
-    date: 'Aug 2020 - Pres',
-    workLength: `${caculateWorkLength(new Date(2021, 6, 1), new Date())}`,
+    date: 'Aug 2020 - Sep 2022',
+    workLength: `1 yr 2 mos`,
     location: 'Utrecht Area, Netherlands',
     tasks: [
       'Developing a developer experience portal based on https://backstage.io within Bol.com',

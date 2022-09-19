@@ -97,16 +97,6 @@ module.exports = {
     },
     footer: {
       style: 'light',
-      links: [
-        {
-          title: 'Support me',
-          items: [
-            {
-              html: `<a href="https://www.buymeacoffee.com/djamaile" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>`,
-            },
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} Djamaile Rahamat, Inc. Built with Docusaurus.`,
     },
     prism: {
