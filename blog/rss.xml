@@ -4,9 +4,16 @@
         <title>Djamaile Rahamat Blog</title>
         <link>https://djamaile.dev/blog</link>
         <description>Djamaile Rahamat Blog</description>
-        <lastBuildDate>Sun, 31 Oct 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Oct 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Leaving Bol.com]]></title>
+            <link>https://djamaile.dev/blog/leaving-bol-dot-com</link>
+            <guid>leaving-bol-dot-com</guid>
+            <pubDate>Mon, 03 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[I recently made the decision to leave Bol.com.]]></description>
+        </item>
         <item>
             <title><![CDATA[Using KEDA and Prometheus to scale your k8s workloads]]></title>
             <link>https://djamaile.dev/blog/using-keda-and-prometheus</link>

@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://djamaile.dev/blog</id>
     <title>Djamaile Rahamat Blog</title>
-    <updated>2021-10-31T00:00:00.000Z</updated>
+    <updated>2022-10-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://djamaile.dev/blog"/>
     <subtitle>Djamaile Rahamat Blog</subtitle>
     <icon>https://djamaile.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Leaving Bol.com]]></title>
+        <id>leaving-bol-dot-com</id>
+        <link href="https://djamaile.dev/blog/leaving-bol-dot-com"/>
+        <updated>2022-10-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I recently made the decision to leave Bol.com.]]></summary>
+        <author>
+            <name>Djamaile Rahamat</name>
+            <uri>https://github.com/djamaile</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Using KEDA and Prometheus to scale your k8s workloads]]></title>
         <id>using-keda-and-prometheus</id>
