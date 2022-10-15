@@ -14,16 +14,6 @@ const socialDetails = [
     classname: 'fab fa-github fa-fw',
     link: 'https://github.com/djamaile',
   },
-  {
-    name: 'youtube',
-    classname: 'fab fa-youtube fa-fw',
-    link: 'https://www.linkedin.com/in/djamaile/',
-  },
-  {
-    name: 'mail',
-    classname: 'fab fa-envelope fa-fw',
-    link: 'mailto:rdjamaile@gmail.com',
-  },
 ];
 
 const getHoverIconColor = (site: string): string => {
@@ -32,10 +22,6 @@ const getHoverIconColor = (site: string): string => {
       return '#0a66c2';
     case 'github':
       return 'purple';
-    case 'youtube':
-      return '#c4302b';
-    case 'mail':
-      return 'brown';
     default:
       return 'blue';
   }
