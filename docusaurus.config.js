@@ -91,10 +91,6 @@ module.exports = {
         },
       ],
     },
-    googleAnalytics: {
-      trackingID: 'UA-204542359-2',
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
     footer: {
       style: 'light',
       copyright: `Copyright © ${new Date().getFullYear()} Djamaile Rahamat, Inc. Built with Docusaurus.`,
@@ -103,7 +99,7 @@ module.exports = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
-    metadatas: [
+    metadata: [
       { name: 'robots', content: 'max-image-preview:large' },
       { name: 'monetization', content: '$ilp.uphold.com/fYPB8Pjyig3z' }
     ],
@@ -112,7 +108,13 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
-        docs: false,
+        docs: {
+          remarkPlugins: [require('mdx-mermaid')],
+        },
+        googleAnalytics: {
+          trackingID: 'UA-204542359-2',
+          anonymizeIP: true, // Should IPs be anonymized?
+        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.

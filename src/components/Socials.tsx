@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { loadCSS } from 'fg-loadcss';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import {useThemeConfig} from '@docusaurus/theme-common';
 import Icon from '@mui/material/Icon';
 
 const socialDetails = [
@@ -28,7 +28,7 @@ const getHoverIconColor = (site: string): string => {
 };
 
 export const Socials = () => {
-  const { isDarkTheme } = useThemeContext();
+  const { colorMode } = useThemeConfig();
 
   useEffect(() => {
     const node = loadCSS(
@@ -56,7 +56,7 @@ export const Socials = () => {
             <Icon
               className={cn.classname}
               sx={{
-                color: isDarkTheme ? 'white' : 'black',
+                color: colorMode.defaultMode ? 'white' : 'black',
                 fontSize: 30,
                 marginTop: 1,
                 marginRight: 1,
