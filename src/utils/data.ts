@@ -57,8 +57,14 @@ const experience: Array<ExperienceType> = [
     date: 'Sep 2022 - pres',
     workLength: `${caculateWorkLength(new Date(2022, 9, 1), new Date())} mos`,
     location: 'Amsterdam, Noord-Holland, Nederland',
-    tasks: ['Working on Backstage'],
-    techstack: ['ReactJS', 'TypeScript'],
+    tasks: [
+      'Founding engineer of Backstage Portal from day one through GA launch',
+      "Led 'Managed By Portal' work stream: shipped self-service software catalog import, targeting 80% reduction in customer onboarding time",
+      "Contributor to AiKA, Spotify's in-platform AI assistant for codebase questions, catalog management, and workflow automation—built key reliability and debugging features",
+      'Reduced monorepo CI pipeline time by 54% and E2E test time by 35%, saving hundreds of engineering hours monthly',
+      'Architected and implemented core systems of Backstage Portal',
+    ],
+    techstack: ['React', 'TypeScript', 'Node.js', 'Go', 'Backstage', 'GCP'],
   },
   {
     img: 'img/bol.png',

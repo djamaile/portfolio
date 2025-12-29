@@ -1,7 +1,5 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Chip from '@mui/material/Chip';
+import styles from './About.module.css';
 
 const skills = [
   { category: 'Frontend', items: ['React', 'TypeScript', 'Next.js'] },
@@ -12,89 +10,42 @@ const skills = [
 
 export const About: React.FC = () => {
   return (
-    <Box
-      component="section"
-      sx={{
-        py: { xs: 4, md: 6 },
-        px: { xs: 2, md: 3 },
-        maxWidth: 900,
-        mx: 'auto',
-      }}
-    >
-      <Typography
-        variant="h4"
-        sx={{
-          fontWeight: 700,
-          mb: 3,
-          textAlign: 'center',
-          color: 'var(--ifm-heading-color)',
-        }}
-      >
-        About Me
-      </Typography>
+    <section className={styles.about}>
+      <div className={styles.container}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionLabel}>About</span>
+          <div className={styles.sectionLine} />
+        </div>
 
-      <Typography
-        sx={{
-          fontSize: '1.1rem',
-          lineHeight: 1.8,
-          color: 'var(--ifm-font-color-base)',
-          textAlign: 'center',
-          maxWidth: 700,
-          mx: 'auto',
-          mb: 4,
-        }}
-      >
-        Software Engineer at Spotify working on Backstage. Passionate about
-        developer experience, cloud infrastructure, and building tools that
-        make developers more productive. Based in Amsterdam.
-      </Typography>
+        <div className={styles.content}>
+          <h2 className={styles.title}>
+            Building tools that make
+            <br />
+            <span className={styles.titleAccent}>developers productive</span>
+          </h2>
 
-      <Box
-        sx={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          gap: 3,
-        }}
-      >
-        {skills.map(skillGroup => (
-          <Box
-            key={skillGroup.category}
-            sx={{
-              textAlign: 'center',
-              minWidth: 150,
-            }}
-          >
-            <Typography
-              sx={{
-                fontSize: '0.85rem',
-                fontWeight: 600,
-                color: 'var(--portfolio-text-muted)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-                mb: 1,
-              }}
-            >
-              {skillGroup.category}
-            </Typography>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, justifyContent: 'center' }}>
-              {skillGroup.items.map(skill => (
-                <Chip
-                  key={skill}
-                  label={skill}
-                  size="small"
-                  sx={{
-                    bgcolor: 'var(--ifm-color-primary)',
-                    color: 'white',
-                    fontWeight: 500,
-                    fontSize: '0.75rem',
-                  }}
-                />
-              ))}
-            </Box>
-          </Box>
-        ))}
-      </Box>
-    </Box>
+          <p className={styles.description}>
+            Software Engineer at Spotify working on Backstage, the open platform for
+            building developer portals. Passionate about AI-powered developer experience, cloud
+            infrastructure, and creating tools that help teams ship faster. Based in Amsterdam.
+          </p>
+        </div>
+
+        <div className={styles.skillsGrid}>
+          {skills.map((skillGroup) => (
+            <div key={skillGroup.category} className={styles.skillGroup}>
+              <h3 className={styles.skillCategory}>{skillGroup.category}</h3>
+              <div className={styles.skillTags}>
+                {skillGroup.items.map((skill) => (
+                  <span key={skill} className={styles.skillTag}>
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };

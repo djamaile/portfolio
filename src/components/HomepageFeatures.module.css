@@ -1,12 +1,41 @@
+/* Homepage Features - Editorial Style */
+
 .features {
+  padding: 5rem 1.5rem;
+  border-top: 1px solid var(--portfolio-card-border);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
   display: flex;
-  align-items: flex-start;
-  padding: 3rem 0;
-  width: 100%;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sectionLabel {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--portfolio-text-muted);
+  white-space: nowrap;
+}
+
+.sectionLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--portfolio-card-border), transparent);
 }
 
 @media screen and (max-width: 966px) {
   .features {
-    padding: 2rem 0;
+    padding: 3rem 1rem;
   }
 }

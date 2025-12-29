@@ -105,3 +105,419 @@ a {
 .tabs__item--active {
   border-bottom-color: var(--ifm-color-primary);
 }
+
+/* ========================================
+   Editorial Blog Typography & Overrides
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Sora:wght@300;400;500;600&display=swap');
+
+/* Blog page specific background */
+html[class*='docs-doc-page'] .main-wrapper,
+.blog-wrapper {
+  background: var(--ifm-background-color);
+}
+
+/* Blog article typography refinements */
+article.margin-top--xl {
+  margin-top: 0 !important;
+}
+
+/* Override default blog list styles when using custom theme */
+.blogPostList {
+  list-style: none;
+  padding: 0;
+}
+
+/* Smooth page transitions */
+.main-wrapper {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Code block enhancements for blog */
+.prism-code {
+  border-radius: 1rem !important;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+/* Blog post content link styles */
+.markdown a {
+  text-decoration-color: var(--ifm-color-primary);
+  text-underline-offset: 3px;
+}
+
+/* Blog tag pill styles */
+.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+/* Navbar transparency for blog hero */
+.navbar--fixed-top {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+html[data-theme='light'] .navbar--fixed-top {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+html[data-theme='dark'] .navbar--fixed-top {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+/* Footer refinement */
+.footer--dark {
+  background: var(--ifm-background-color);
+}
+
+.footer__copyright {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+/* Scrollbar styling for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--portfolio-card-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(99, 102, 241, 0.2);
+  color: inherit;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   Blog Post Page - Editorial Styling
+   ======================================== */
+
+/* Blog post header */
+.blogPostTitle {
+  font-family: 'Fraunces', Georgia, serif !important;
+  font-size: clamp(2rem, 5vw, 3rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem !important;
+}
+
+/* Blog post metadata */
+.blogPostData {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  color: var(--portfolio-text-muted);
+}
+
+/* Author card styling */
+.avatar__photo {
+  border: 2px solid var(--portfolio-card-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar__name {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-weight: 500;
+}
+
+.avatar__subtitle {
+  font-family: 'Sora', -apple-system, sans-serif;
+  color: var(--portfolio-text-muted);
+}
+
+/* Blog post content typography */
+.markdown h1,
+.markdown h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--portfolio-card-border);
+}
+
+.markdown h3,
+.markdown h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+}
+
+.markdown p {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 1.0625rem;
+}
+
+.markdown li {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.markdown li::marker {
+  color: var(--ifm-color-primary);
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background: var(--portfolio-card-bg);
+  border-radius: 0 0.75rem 0.75rem 0;
+  padding: 1.25rem 1.5rem;
+  font-style: italic;
+}
+
+.markdown strong {
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+/* Code blocks in blog posts */
+.markdown pre {
+  border-radius: 1rem;
+  border: 1px solid var(--portfolio-card-border);
+}
+
+.markdown code {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--portfolio-card-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 0.375rem;
+  border: 1px solid var(--portfolio-card-border);
+}
+
+.markdown pre code {
+  border: none;
+  padding: 0;
+}
+
+/* Blog post tags */
+.tagList {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--portfolio-card-border);
+}
+
+/* Blog post navigation */
+.pagination-nav {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--portfolio-card-border);
+}
+
+.pagination-nav__link {
+  border-radius: 1rem;
+  border: 1px solid var(--portfolio-card-border);
+  background: var(--portfolio-card-bg);
+  transition: all 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.pagination-nav__sublabel {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.pagination-nav__label {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+}
+
+/* Reading time badge */
+.readingTime {
+  font-family: 'Sora', -apple-system, sans-serif;
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+/* Blog sidebar TOC */
+.tableOfContents {
+  font-family: 'Sora', -apple-system, sans-serif;
+}
+
+.table-of-contents__link {
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+/* Edit this page link */
+.theme-edit-this-page {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-size: 0.875rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.theme-edit-this-page:hover {
+  opacity: 1;
+}
+
+/* ========================================
+   Homepage - Editorial Styling
+   ======================================== */
+
+/* Tabs - Editorial Style */
+.tabs-container {
+  font-family: 'Sora', -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+.tabs {
+  border-bottom: 1px solid var(--portfolio-card-border);
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar on tab panels */
+[role="tabpanel"] {
+  overflow: hidden;
+}
+
+.tabs__item {
+  font-family: 'Sora', -apple-system, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all 0.2s ease;
+}
+
+.tabs__item:hover {
+  background: transparent;
+  color: var(--ifm-color-primary);
+}
+
+.tabs__item--active {
+  background: transparent !important;
+  color: var(--ifm-color-primary) !important;
+  border-bottom-color: var(--ifm-color-primary) !important;
+  font-weight: 600;
+}
+
+/* Project Cards - Editorial Style */
+.projectCard {
+  background: var(--portfolio-card-bg);
+  border: 1px solid var(--portfolio-card-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.projectCard:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.1);
+}
+
+/* MUI overrides for homepage */
+.MuiTypography-root {
+  font-family: 'Sora', -apple-system, sans-serif !important;
+}
+
+.MuiTypography-h4,
+.MuiTypography-h5 {
+  font-family: 'Fraunces', Georgia, serif !important;
+  font-weight: 500 !important;
+}
+
+.MuiChip-root {
+  font-family: 'Sora', -apple-system, sans-serif !important;
+  font-size: 0.75rem !important;
+  border-radius: 2rem !important;
+}
+
+.MuiButton-root {
+  font-family: 'Sora', -apple-system, sans-serif !important;
+  text-transform: none !important;
+  border-radius: 2rem !important;
+}
+
+/* Experience/Education cards */
+.experienceCard,
+.educationCard {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.experienceCard::before,
+.educationCard::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  background: var(--ifm-color-primary);
+  border-radius: 50%;
+}
+
+.experienceCard::after,
+.educationCard::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 1.25rem;
+  width: 2px;
+  height: calc(100% - 0.5rem);
+  background: var(--portfolio-card-border);
+}
+
+.experienceCard:last-child::after,
+.educationCard:last-child::after {
+  display: none;
+}
