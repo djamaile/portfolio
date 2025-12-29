@@ -1,10 +1,7 @@
 ---
 slug: how-to-setup-husky-eslint-prettier
 title: 'How to setup husky, eslint and prettier within minutes'
-author: Djamaile Rahamat
-author_title: Software Engineer
-author_url: https://github.com/djamaile
-author_image_url: https://avatars.githubusercontent.com/u/15789670?v=4
+authors: [djamaile]
 tags: [react, typescript]
 ---
 

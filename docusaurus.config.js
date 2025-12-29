@@ -1,24 +1,23 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import { themes as prismThemes } from 'prism-react-renderer';
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: 'Djamaile Rahamat',
-  tagline:
-    'I like full-stack development. Also, I am interested in the cloud, coding & e-sports.',
+  tagline: 'Software Engineer at Spotify. Passionate about developer experience, cloud infrastructure, and building tools that make developers productive.',
   url: 'https://djamaile.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'djamaile', // Usually your GitHub org/user name.
-  projectName: 'portfolio', // Usually your repo name.
+  organizationName: 'djamaile',
+  projectName: 'portfolio',
   trailingSlash: true,
+
   plugins: [
     [
       '@docusaurus/plugin-pwa',
       {
-        debug: true,
+        debug: false,
         offlineModeActivationStrategies: [
           'appInstalled',
           'standalone',
@@ -33,12 +32,12 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'manifest',
-            href: 'manifest.json', // your PWA manifest
+            href: 'manifest.json',
           },
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            content: '#6366f1',
           },
           {
             tagName: 'meta',
@@ -48,66 +47,79 @@ module.exports = {
           {
             tagName: 'meta',
             name: 'apple-mobile-web-app-status-bar-style',
-            content: '#000',
+            content: 'black-translucent',
           },
           {
             tagName: 'link',
             rel: 'apple-touch-icon',
-            href: 'img/docusaurus.png',
+            href: 'img/mob-2.png',
           },
           {
             tagName: 'link',
             rel: 'mask-icon',
-            href: 'img/docusaurus.png',
-            color: 'rgb(62, 204, 94)',
+            href: 'img/mob-2.png',
+            color: '#6366f1',
           },
           {
             tagName: 'meta',
             name: 'msapplication-TileImage',
-            content: 'img/docusaurus.png',
+            content: 'img/mob-2.png',
           },
           {
             tagName: 'meta',
             name: 'msapplication-TileColor',
-            content: '#000',
+            content: '#6366f1',
           },
         ],
       },
     ],
   ],
+
   themeConfig: {
+    image: 'img/social-card.png',
     navbar: {
       title: 'Djamaile Rahamat',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Djamaile Rahamat',
         src: 'img/mob-2.png',
       },
       items: [
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/djamaile/portfolio',
+          href: 'https://github.com/djamaile',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://linkedin.com/in/djamaile',
+          label: 'LinkedIn',
           position: 'right',
         },
       ],
     },
-    googleAnalytics: {
-      trackingID: 'UA-204542359-2',
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
     footer: {
       style: 'light',
-      copyright: `Copyright © ${new Date().getFullYear()} Djamaile Rahamat, Inc. Built with Docusaurus.`,
+      copyright: `${new Date().getFullYear()} Djamaile Rahamat. Built with Docusaurus.`,
     },
     prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
     },
-    metadatas: [
-      { name: 'robots', content: 'max-image-preview:large' },
-      { name: 'monetization', content: '$ilp.uphold.com/fYPB8Pjyig3z' }
+    metadata: [
+      { name: 'keywords', content: 'software engineer, developer, react, typescript, backstage, spotify, cloud, kubernetes' },
+      { name: 'author', content: 'Djamaile Rahamat' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Djamaile Rahamat' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:creator', content: '@daborhon' },
     ],
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
   },
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -115,7 +127,6 @@ module.exports = {
         docs: false,
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl: 'https://github.com/djamaile/portfolio/edit/master/',
           feedOptions: {
             type: 'all',
@@ -124,9 +135,11 @@ module.exports = {
           truncateMarker: /<!--\s*(truncate)\s*-->/,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       },
     ],
   ],
 };
+
+export default config;

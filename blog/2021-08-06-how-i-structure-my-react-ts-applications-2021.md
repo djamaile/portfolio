@@ -1,10 +1,7 @@
 ---
 slug: how-i-structure-my-react-ts-applications-2021
 title: 'How I structure my React /TS applications (2021)'
-author: Djamaile Rahamat
-author_title: Software Engineer
-author_url: https://github.com/djamaile
-author_image_url: https://avatars.githubusercontent.com/u/15789670?v=4
+authors: [djamaile]
 tags: [typescript, javascript, react]
 ---
 

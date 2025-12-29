@@ -1,29 +1,107 @@
-/* stylelint-disable docusaurus/copyright-header */
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  /* Primary - Indigo */
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #4f46e5;
+  --ifm-color-primary-darker: #4338ca;
+  --ifm-color-primary-darkest: #3730a3;
+  --ifm-color-primary-light: #818cf8;
+  --ifm-color-primary-lighter: #a5b4fc;
+  --ifm-color-primary-lightest: #c7d2fe;
+
+  /* Accent - Emerald */
+  --ifm-color-secondary: #10b981;
+
+  /* Typography */
   --ifm-code-font-size: 95%;
+  --ifm-heading-font-weight: 600;
+
+  /* Spacing */
+  --ifm-spacing-horizontal: 1.5rem;
+
+  /* Borders */
+  --ifm-global-radius: 0.75rem;
+
+  /* Shadows */
+  --ifm-global-shadow-lw: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ifm-global-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ifm-global-shadow-tl: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Custom properties */
+  --portfolio-gradient-start: #6366f1;
+  --portfolio-gradient-end: #a855f7;
+  --portfolio-card-bg: #ffffff;
+  --portfolio-card-border: #e2e8f0;
+  --portfolio-text-muted: #64748b;
 }
 
+html[data-theme='dark'] {
+  --ifm-color-primary: #818cf8;
+  --ifm-color-primary-dark: #6366f1;
+  --ifm-color-primary-darker: #4f46e5;
+  --ifm-color-primary-darkest: #4338ca;
+  --ifm-color-primary-light: #a5b4fc;
+  --ifm-color-primary-lighter: #c7d2fe;
+  --ifm-color-primary-lightest: #e0e7ff;
+
+  --portfolio-gradient-start: #818cf8;
+  --portfolio-gradient-end: #c084fc;
+  --portfolio-card-bg: #1e293b;
+  --portfolio-card-border: #334155;
+  --portfolio-text-muted: #94a3b8;
+}
+
+/* Code highlighting */
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(99, 102, 241, 0.1);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(129, 140, 248, 0.15);
+}
+
+/* Hero gradient background */
+.hero--primary {
+  background: linear-gradient(135deg, var(--portfolio-gradient-start), var(--portfolio-gradient-end));
+}
+
+/* Card styling */
+.card {
+  background: var(--portfolio-card-bg);
+  border: 1px solid var(--portfolio-card-border);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-global-shadow-tl);
+}
+
+/* Link styling */
+a {
+  transition: color 0.15s ease;
+}
+
+/* Navbar improvements */
+.navbar {
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Footer improvements */
+.footer {
+  background: var(--ifm-background-color);
+}
+
+/* Tabs styling */
+.tabs__item {
+  font-weight: 500;
+  border-radius: var(--ifm-global-radius) var(--ifm-global-radius) 0 0;
+}
+
+.tabs__item--active {
+  border-bottom-color: var(--ifm-color-primary);
 }

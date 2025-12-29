@@ -1,73 +1,65 @@
 import React, { useEffect } from 'react';
-import { loadCSS } from 'fg-loadcss';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
 import Icon from '@mui/material/Icon';
 
 const socialDetails = [
   {
     name: 'linkedin',
-    classname: 'fab fa-linkedin fa-fw',
+    classname: 'fab fa-linkedin',
     link: 'https://www.linkedin.com/in/djamaile/',
+    label: 'LinkedIn',
   },
   {
     name: 'github',
-    classname: 'fab fa-github fa-fw',
+    classname: 'fab fa-github',
     link: 'https://github.com/djamaile',
+    label: 'GitHub',
   },
 ];
 
-const getHoverIconColor = (site: string): string => {
-  switch (site) {
-    case 'linkedin':
-      return '#0a66c2';
-    case 'github':
-      return 'purple';
-    default:
-      return 'blue';
-  }
-};
-
 export const Socials = () => {
-  const { isDarkTheme } = useThemeContext();
-
   useEffect(() => {
-    const node = loadCSS(
-      'https://use.fontawesome.com/releases/v5.12.0/css/all.css',
-      document.querySelector('#font-awesome-css'),
-    );
-
-    return () => {
-      if (node.parentNode !== undefined) {
-        node.parentNode.removeChilde(node);
-      }
-    };
+    const existing = document.getElementById('font-awesome-css');
+    if (!existing) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://use.fontawesome.com/releases/v5.15.4/css/all.css';
+      link.id = 'font-awesome-css';
+      document.head.appendChild(link);
+    }
   }, []);
 
   return (
-    <div>
-      {socialDetails.map(cn => {
-        return (
-          <a
-            href={cn.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={cn.classname}
-          >
-            <Icon
-              className={cn.classname}
-              sx={{
-                color: isDarkTheme ? 'white' : 'black',
-                fontSize: 30,
-                marginTop: 1,
-                marginRight: 1,
-                '&:hover': {
-                  color: `${getHoverIconColor(cn.name)}`,
-                },
-              }}
-            />
-          </a>
-        );
-      })}
-    </div>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 1,
+      }}
+    >
+      {socialDetails.map(social => (
+        <IconButton
+          key={social.name}
+          component="a"
+          href={social.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={social.label}
+          sx={{
+            color: 'rgba(255,255,255,0.9)',
+            fontSize: 28,
+            transition: 'all 0.2s ease',
+            '&:hover': {
+              color: 'white',
+              transform: 'translateY(-3px)',
+              bgcolor: 'rgba(255,255,255,0.15)',
+            },
+          }}
+        >
+          <Icon className={social.classname} sx={{ fontSize: 'inherit' }} />
+        </IconButton>
+      ))}
+    </Box>
   );
 };

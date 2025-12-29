@@ -1,10 +1,7 @@
 ---
 slug: small-react-ion-from-kanji-to-hiragana
 title: 'Small React(ion): From Kanji to Hiragana!'
-author: Djamaile Rahamat
-author_title: Software Engineer
-author_url: https://github.com/djamaile
-author_image_url: https://avatars.githubusercontent.com/u/15789670?v=4
+authors: [djamaile]
 tags: [typescript, javascript, react]
 ---
 
