@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdjamaile_dev=globalThis.webpackChunkdjamaile_dev||[]).push([[672],{643(a){a.exports=JSON.parse('{"authors":[{"name":"Djamaile Rahamat","title":"Software Engineer","url":"https://github.com/djamaile","imageURL":"https://avatars.githubusercontent.com/u/15789670?v=4","key":"djamaile","page":null,"count":6}]}')}}]);

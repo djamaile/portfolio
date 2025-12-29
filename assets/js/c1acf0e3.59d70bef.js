@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdjamaile_dev=self.webpackChunkdjamaile_dev||[]).push([[969],{5475:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/prometheus","name":"prometheus","count":1,"permalink":"/blog/tags/prometheus"}')}}]);
